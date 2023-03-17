@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/* common */
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+}
+/* end of common */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+.tic-clock,
+.main {
+  width: 35rem;
+  height: 35rem;
+  background-color: black;
+  border: 1px solid white;
+}
+.main {
+  border: none;
+  border-radius: 50%;
+  /* background-color: blueviolet; */
+  position: relative;
+}
+.main > span {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  z-index: 100;
+}
+.twe {
+  top: 0;
+  right: 50%;
+}
+.thr {
+  top: 50%;
+  right: 0;
+}
+.six {
+  bottom: 0;
+  right: 50%;
+}
+.nin {
+  top: 50%;
+  left: 0;
+}
+.mid {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  left: 50%;
+}
+.hour {
+  height: 10rem;
+  width: 2px;
+  background-color: white;
+  transform: translateX(-50%) rotate(180deg);
+  transform-origin: top;
+  top: 51%;
+  left: 50%;
+}
+.min {
+  height: 12rem;
+  width: 1.5px;
+  background-color: white;
+  transform: translateX(-50%) rotate(180deg);
+  transform-origin: top;
+  top: 51%;
+  left: 50%;
+}
+.sec {
+  height: 14rem;
+  width: 1px;
+  background-color: white;
+  transform: translateX(-50%) rotate(180deg);
+  transform-origin: top;
+  top: 51%;
+  left: 50%;
+}
+.dig-clock {
+  width: 35rem;
+  height: 20rem;
+  background-color: black;
+  border: 1px solid white;
+}
+.dig-clock > div {
+  width: 100%;
+  color: white;
+}
+.day,
+.date {
+  border-bottom: 1px solid white;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+}
+.time {
+  border-bottom: 1px solid white;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.date {
+  border-bottom: none;
+}
+.time > div {
+  font-size: 5rem;
+}
